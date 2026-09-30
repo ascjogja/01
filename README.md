@@ -1,61 +1,39 @@
-# Academic Support Center (ASC) Website
+# Academic Support Center (ASC) — GitHub Pages v2
 
-Website statis responsive untuk GitHub Pages.
+Versi ini dibuat lebih aman untuk GitHub Pages: CSS dan JavaScript utama sudah menyatu di dalam `index.html`, sehingga tampilan tidak bergantung pada file CSS/JS terpisah.
 
-## Fitur
-- Responsive desktop, tablet, mobile
-- Sticky navigation + mobile menu
-- Hero slider otomatis
-- Hover animation
-- Font Open Sans
-- Warna biru, putih, kuning
-- Layanan, tentang, alur kerja
-- Logo partner berjalan / marquee
-- Form nama, nomor WA, pesan
-- Submit form langsung membuka WhatsApp ASC
-- Facebook, Instagram, WhatsApp
-- Floating WhatsApp button
-- Back to top
-- Struktur file mudah diedit
+## Struktur WAJIB
+```text
+repository/
+├── index.html
+└── assets/
+    └── images/
+        ├── hero-1.jpg
+        ├── hero-2.jpg
+        ├── hero-3.jpg
+        ├── about.jpg
+        ├── partner-1.png
+        ├── partner-2.png
+        ├── partner-3.png
+        ├── partner-4.png
+        ├── partner-5.png
+        └── partner-6.png
+```
 
-## Cara Mengganti Gambar
-Simpan gambar Anda di folder `assets/images/` lalu gunakan nama file berikut agar tidak perlu mengubah kode:
+**PENTING:** upload `index.html` dan folder `assets` langsung ke repository. Jangan upload folder `ASC-GitHub-v2` sebagai satu folder di dalam repository.
 
-- `hero-1.jpg`
-- `hero-2.jpg`
-- `hero-3.jpg`
-- `about.jpg`
+## Ganti gambar
+Timpa file dengan nama yang sama di `assets/images/`. Tidak perlu mengubah kode.
 
-Untuk partner, tersedia pemanggilan:
-- `partner-1.png`
-- `partner-2.png`
-- `partner-3.png`
-- `partner-4.png`
-- `partner-5.png`
-- `partner-6.png`
+## WhatsApp
+Nomor tujuan: `+62 895-3916-83301`
 
-Anda juga boleh mengganti nama file langsung di `index.html`.
+## Media sosial
+Facebook: `https://www.facebook.com/profile.php?id=61594514326640`
+Instagram: `https://www.instagram.com/academicsupport.center/`
 
-## Nomor WhatsApp
-Nomor WhatsApp sudah diset ke:
-`+62 895-3916-83301`
+## GitHub Pages
+Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
 
-Format teknis di kode:
-`62895391683301`
-
-Jika nomor berubah, cari `62895391683301` di file `index.html` dan `assets/js/main.js`.
-
-## Upload ke GitHub Pages
-1. Buat repository baru di GitHub.
-2. Upload seluruh isi folder ini ke repository tersebut.
-3. Masuk ke **Settings > Pages**.
-4. Pada **Build and deployment**, pilih **Deploy from a branch**.
-5. Pilih branch `main` dan folder `/ (root)`.
-6. Klik Save.
-7. Tunggu hingga GitHub memberikan URL website Anda.
-
-## Edit Teks
-Semua teks utama ada di `index.html`.
-
-## Edit Warna
-Semua warna utama ada di bagian `:root` file `assets/css/style.css`.
+Jika repository bernama `01`, URL umumnya:
+`https://NAMA-USER.github.io/01/`
