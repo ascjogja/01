@@ -359,76 +359,65 @@ button, input, textarea { font: inherit; }
 }
 
 /* =========================================================
-   BUTTON 6 LAYANAN SEO - RAPI & COMPACT
+   6 BUTTON LAYANAN - COMPACT & CENTER
    ========================================================= */
 
 .service-buttons-wrap {
-    width: 100%;
-    display: grid;
-
-    /* Lebar button dibuat lebih kecil */
-    grid-template-columns: repeat(3, 280px);
-
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    gap: 16px 20px;
+    gap: 14px 16px;
 
-    margin: 38px auto 0;
+    max-width: 850px;
+    margin: 35px auto 0;
 }
 
 /* BUTTON */
 .service-button {
-    width: 280px;
-    min-height: 54px;
-
-    display: flex !important;
+    display: inline-flex !important;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    padding: 13px 17px;
+    width: auto !important;
+    min-width: 210px;
+    max-width: 245px;
+    height: 48px;
+
+    padding: 0 16px;
 
     background: #ffffff !important;
     color: #0b57a4 !important;
 
-    border: 1px solid #d6e4f2;
-    border-radius: 10px;
+    border: 1px solid #d7e3ef;
+    border-radius: 9px;
 
     text-decoration: none !important;
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 
-    box-shadow: 0 4px 12px rgba(13, 59, 105, 0.07);
+    box-shadow: 0 3px 10px rgba(13, 59, 105, 0.06);
 
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 /* TEXT */
 .service-button span {
-    flex: 1;
-    text-align: left;
+    white-space: nowrap;
 }
 
-/* ICON */
+/* ARROW */
 .service-button i {
-    flex-shrink: 0;
-    margin-left: 12px;
-    font-size: 13px;
+    margin-left: 9px;
+    font-size: 11px;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease;
 }
 
-/* =========================================================
-   HOVER
-   ========================================================= */
-
+/* HOVER */
 .service-button:hover {
     background: #0b57a4 !important;
     color: #ffffff !important;
@@ -437,64 +426,62 @@ button, input, textarea { font: inherit; }
 
     transform: translateY(-3px);
 
-    box-shadow: 0 8px 18px rgba(11, 87, 164, 0.20);
+    box-shadow: 0 7px 16px rgba(11, 87, 164, 0.18);
 }
 
 .service-button:hover i {
-    transform: translateX(5px);
+    transform: translateX(4px);
 }
 
-/* =========================================================
-   ACTIVE
-   ========================================================= */
-
+/* ACTIVE */
 .service-button:active {
     transform: translateY(-1px);
 }
 
-/* =========================================================
-   KEYBOARD FOCUS
-   ========================================================= */
-
+/* FOCUS */
 .service-button:focus-visible {
     outline: 3px solid #ffc928;
     outline-offset: 3px;
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 950px) {
-
+/* TABLET */
+@media (max-width: 800px) {
     .service-buttons-wrap {
-        grid-template-columns: repeat(2, 280px);
-    }
-
-}
-
-/* =========================================================
-   HP
-   ========================================================= */
-
-@media (max-width: 620px) {
-
-    .service-buttons-wrap {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        margin-top: 30px;
+        max-width: 600px;
     }
 
     .service-button {
-        width: min(100%, 320px);
-        margin: 0 auto;
+        min-width: 200px;
+    }
+}
 
-        min-height: 52px;
-        padding: 13px 16px;
+/* HP */
+@media (max-width: 600px) {
 
-        font-size: 14px;
+    .service-buttons-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        max-width: 100%;
+        gap: 10px;
+
+        margin-top: 28px;
     }
 
+    .service-button {
+        width: 100% !important;
+        min-width: 0;
+        max-width: none;
+
+        height: 46px;
+        padding: 0 10px;
+
+        font-size: 12px;
+    }
+
+    .service-button i {
+        margin-left: 6px;
+    }
 }
     
   </style>
