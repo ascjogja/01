@@ -267,3 +267,24 @@ button, input, textarea { font: inherit; }
     display: block;
     flex-shrink: 0;
 }
+/* =========================
+   LOGO FOOTER ASC
+   ========================= */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand .footer-logo {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    min-height: 60px !important;
+    max-height: 60px !important;
+    object-fit: contain !important;
+    display: block !important;
+    flex: 0 0 60px !important;
+}
