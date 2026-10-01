@@ -258,6 +258,104 @@ button, input, textarea { font: inherit; }
     display: block !important;
     flex: 0 0 60px !important;
 }
+
+    /* =========================
+   SEO SERVICE CARDS
+   ========================= */
+
+.services-section {
+    padding: 70px 0;
+    background: #f8fafc;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+.service-card h3 {
+    color: #123b7a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #4b5563;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.service-link {
+    display: inline-block;
+
+    color: #123b7a;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.service-link:hover {
+    color: #f2b705;
+    transform: translateX(4px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-section {
+        padding: 50px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 22px;
+    }
+
+}
+    
   </style>
 </head>
 <body>
