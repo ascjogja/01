@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Konsultasi Skripsi Jogja & Bimbingan Skripsi | ASC
+    </title>
+
+    <meta name="description"
+          content="Academic Support Center menyediakan konsultasi dan pendampingan skripsi di Jogja untuk membantu mahasiswa memahami topik, metodologi, penulisan, olah data, review, dan persiapan bimbingan.">
+
+    <meta name="keywords"
+          content="konsultasi skripsi Jogja, bimbingan skripsi Jogja, konsultasi skripsi mahasiswa, pendampingan skripsi Jogja, konsultasi penelitian skripsi">
+
+    <meta name="author"
+          content="Academic Support Center">
+
+    <link rel="canonical"
+          href="https://ascjogja.github.io/01/konsultasi-skripsi-jogja.html">
+
+    <link rel="icon"
+          type="image/png"
+          href="./ASC-favicon-512.png">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #123b7a;
+        }
+
+
+        .brand img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+        }
+
+
+        .brand-text strong {
+            display: block;
+            font-size: 17px;
+        }
+
+
+        .brand-text span {
+            display: block;
+            font-size: 12px;
+            color: #777;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            color: #123b7a;
+            font-weight: 600;
+            margin-left: 16px;
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: #f2b705;
+        }
+
+
+        .hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0d47a1,
+                    #1565c0
+                );
+
+            color: white;
+            padding: 85px 0;
+        }
+
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+
+        .hero p {
+            max-width: 820px;
+            font-size: 18px;
+        }
+
+
+        .btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 13px 24px;
+            border-radius: 8px;
+            background: #f2b705;
+            color: #172033;
+            text-decoration: none;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #ffd54f;
+        }
+
+
+        section {
+            padding: 65px 0;
+        }
+
+
+        .section-title {
+            color: #123b7a;
+            font-size: 30px;
+            margin-bottom: 22px;
+        }
+
+
+        .justify {
+            text-align: justify;
+            margin-bottom: 18px;
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+
+            box-shadow:
+                0 5px 18px
+                rgba(0,0,0,0.06);
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(0,0,0,0.10);
+        }
+
+
+        .card h3 {
+            color: #123b7a;
+            margin-bottom: 10px;
+        }
+
+
+        .highlight {
+            background: #f8fafc;
+        }
+
+
+        .steps {
+            margin-top: 30px;
+        }
+
+
+        .step {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+
+        .number {
+            min-width: 42px;
+            height: 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #f2b705;
+            color: #172033;
+
+            border-radius: 50%;
+
+            font-weight: 800;
+        }
+
+
+        .step h3 {
+            color: #123b7a;
+            margin-bottom: 5px;
+        }
+
+
+        .cta {
+            background: #123b7a;
+            color: white;
+            text-align: center;
+        }
+
+
+        .cta h2 {
+            margin-bottom: 12px;
+        }
+
+
+        .cta p {
+            max-width: 760px;
+            margin: auto;
+        }
+
+
+        footer {
+            background: #0b2d5c;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+        }
+
+
+        footer a {
+            color: #f2b705;
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+
+
+            nav {
+                text-align: center;
+            }
+
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+
+            .hero {
+                padding: 55px 0;
+            }
+
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+
+            .hero p {
+                font-size: 16px;
+            }
+
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+
+            section {
+                padding: 45px 0;
+            }
+
+
+            .step {
+                gap: 12px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="container navbar">
+
+
+        <a href="./index.html"
+           class="brand">
+
+            <img src="./logoASC.png"
+                 alt="Academic Support Center">
+
+            <div class="brand-text">
+
+                <strong>
+                    Academic Support Center
+                </strong>
+
+                <span>
+                    Selalu Support Akademikmu
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="./index.html">
+                Beranda
+            </a>
+
+            <a href="./jasa-skripsi-jogja.html">
+                Skripsi
+            </a>
+
+            <a href="./jasa-tesis-jogja.html">
+                Tesis
+            </a>
+
+            <a href="./olah-data-skripsi.html">
+                Olah Data
+            </a>
+
+        </nav>
+
+
+    </div>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="container">
+
+
+        <h1>
+            Konsultasi Skripsi Jogja & Bimbingan Skripsi
+        </h1>
+
+
+        <p>
+            Academic Support Center menyediakan konsultasi dan
+            pendampingan skripsi untuk membantu mahasiswa memahami
+            proses penelitian, penulisan, metodologi, olah data,
+            review, dan persiapan bimbingan secara lebih terarah.
+        </p>
+
+
+        <a class="btn"
+           href="https://wa.me/62895391683301?text=Halo%20ASC,%20saya%20ingin%20konsultasi%20skripsi."
+           target="_blank"
+           rel="noopener noreferrer">
+
+            Konsultasi via WhatsApp
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+            Konsultasi Skripsi untuk Mahasiswa di Jogja
+        </h2>
+
+
+        <p class="justify">
+            Proses penyusunan skripsi terdiri dari berbagai tahapan,
+            mulai dari menentukan topik, menyusun proposal, memilih
+            metodologi penelitian, mengolah data, menyusun pembahasan,
+            hingga mempersiapkan proses bimbingan dan revisi.
+        </p>
+
+
+        <p class="justify">
+            Pada setiap tahapan tersebut, mahasiswa dapat menemukan
+            kendala yang berbeda. Konsultasi skripsi dapat membantu
+            mahasiswa mendapatkan arahan mengenai langkah yang perlu
+            dipahami dan dikerjakan sesuai kebutuhan penelitian.
+        </p>
+
+
+        <p class="justify">
+            Academic Support Center menyediakan pendampingan secara
+            online maupun offline di Jogja dengan pembahasan yang
+            disesuaikan dengan kondisi dan kebutuhan akademik mahasiswa.
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<section class="highlight">
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+            Layanan Konsultasi Skripsi
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>
+                    Konsultasi Topik
+                </h3>
+
+                <p class="justify">
+                    Membahas ide dan fokus penelitian agar mahasiswa
+                    memiliki gambaran yang lebih jelas mengenai
+                    topik skripsinya.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Konsultasi Proposal
+                </h3>
+
+                <p class="justify">
+                    Pendampingan dalam memahami struktur proposal
+                    dan hubungan antarbagian dalam penelitian.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Metodologi Penelitian
+                </h3>
+
+                <p class="justify">
+                    Konsultasi mengenai pemahaman metode penelitian,
+                    variabel, instrumen, teknik pengumpulan data,
+                    dan tahapan penelitian.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Konsultasi Olah Data
+                </h3>
+
+                <p class="justify">
+                    Pendampingan untuk memahami proses pengolahan,
+                    analisis, dan interpretasi data penelitian.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Review & Revisi
+                </h3>
+
+                <p class="justify">
+                    Membantu mahasiswa memahami bagian yang perlu
+                    diperbaiki berdasarkan hasil review atau masukan
+                    dalam proses bimbingan.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Persiapan Bimbingan
+                </h3>
+
+                <p class="justify">
+                    Konsultasi untuk membantu mahasiswa mempersiapkan
+                    bahan dan pertanyaan sebelum melakukan bimbingan
+                    dengan dosen.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+            Bagaimana Proses Konsultasi?
+        </h2>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="number">
+                    1
+                </div>
+
+                <div>
+
+                    <h3>
+                        Konsultasi Awal
+                    </h3>
+
+                    <p class="justify">
+                        Mahasiswa menyampaikan kebutuhan, kendala,
+                        atau bagian skripsi yang ingin dibahas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    2
+                </div>
+
+                <div>
+
+                    <h3>
+                        Identifikasi Kebutuhan
+                    </h3>
+
+                    <p class="justify">
+                        Pembahasan diarahkan pada bagian skripsi
+                        yang membutuhkan pendampingan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    3
+                </div>
+
+                <div>
+
+                    <h3>
+                        Pendampingan
+                    </h3>
+
+                    <p class="justify">
+                        Mahasiswa mendapatkan penjelasan dan
+                        pendampingan sesuai kebutuhan akademiknya.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="number">
+                    4
+                </div>
+
+                <div>
+
+                    <h3>
+                        Review & Tindak Lanjut
+                    </h3>
+
+                    <p class="justify">
+                        Hasil konsultasi dapat digunakan mahasiswa
+                        sebagai bahan untuk melanjutkan proses
+                        penelitian dan bimbingan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="highlight">
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+            Untuk Mahasiswa yang Membutuhkan Pendampingan
+        </h2>
+
+
+        <p class="justify">
+            Layanan konsultasi skripsi dapat digunakan oleh mahasiswa
+            yang baru menentukan topik, sedang menyusun proposal,
+            mengalami kendala pada metodologi, mengolah data,
+            menyusun pembahasan, maupun mempersiapkan revisi.
+        </p>
+
+
+        <p class="justify">
+            Konsultasi juga dapat dilakukan ketika mahasiswa sudah
+            memiliki draft skripsi dan membutuhkan masukan untuk
+            memahami bagian yang masih perlu diperbaiki.
+        </p>
+
+
+        <p class="justify">
+            Fokus Academic Support Center adalah membantu mahasiswa
+            memahami proses akademiknya. Penelitian, keputusan
+            akademik, dan hasil akhir skripsi tetap menjadi tanggung
+            jawab mahasiswa sebagai bagian dari proses pembelajaran.
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<section class="cta">
+
+    <div class="container">
+
+
+        <h2>
+            Butuh Konsultasi Skripsi di Jogja?
+        </h2>
+
+
+        <p>
+            Ceritakan kebutuhan atau kendala skripsi Anda kepada
+            Academic Support Center untuk mendapatkan informasi
+            mengenai bentuk pendampingan yang sesuai.
+        </p>
+
+
+        <a class="btn"
+           href="https://wa.me/62895391683301?text=Halo%20ASC,%20saya%20ingin%20konsultasi%20skripsi%20di%20Jogja."
+           target="_blank"
+           rel="noopener noreferrer">
+
+            Hubungi ASC via WhatsApp
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    <p>
+
+        © 2026 Academic Support Center (ASC) —
+
+        <a href="https://3dit-id.github.io/3dit/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            Powered by 3DIT.id
+
+        </a>
+
+    </p>
+
+</footer>
+
+
+</body>
+</html>
