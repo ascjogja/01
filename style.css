@@ -227,8 +227,8 @@ button, input, textarea { font: inherit; }
 }
 
 .brand-logo {
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     flex-shrink: 0;
     display: block;
@@ -245,15 +245,15 @@ button, input, textarea { font: inherit; }
 }
 
 .brand-logo {
-    width: 40px !important;
-    height: 40px !important;
-    max-width: 40px !important;
-    max-height: 40px !important;
-    min-width: 40px !important;
-    min-height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    min-width: 50px !important;
+    min-height: 50px !important;
     object-fit: contain !important;
     display: block !important;
-    flex: 0 0 40px !important;
+    flex: 0 0 50px !important;
 }
 
 .brand-text {
