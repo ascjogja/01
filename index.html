@@ -359,7 +359,7 @@ button, input, textarea { font: inherit; }
 }
 
 /* =========================================================
-   6 BUTTON LAYANAN - COMPACT & CENTER
+   6 BUTTON LAYANAN - BLUE TO YELLOW HOVER
    ========================================================= */
 
 .service-buttons-wrap {
@@ -374,7 +374,6 @@ button, input, textarea { font: inherit; }
     margin: 35px auto 0;
 }
 
-/* BUTTON */
 .service-button {
     display: inline-flex !important;
     align-items: center;
@@ -387,10 +386,11 @@ button, input, textarea { font: inherit; }
 
     padding: 0 16px;
 
-    background: #ffffff !important;
-    color: #0b57a4 !important;
+    /* KONDISI NORMAL = BIRU */
+    background: #0b57a4 !important;
+    color: #ffffff !important;
 
-    border: 1px solid #d7e3ef;
+    border: 1px solid #0b57a4;
     border-radius: 9px;
 
     text-decoration: none !important;
@@ -399,53 +399,78 @@ button, input, textarea { font: inherit; }
     font-size: 13px;
     font-weight: 700;
 
-    box-shadow: 0 3px 10px rgba(13, 59, 105, 0.06);
+    box-shadow: 0 4px 12px rgba(11, 87, 164, 0.15);
 
-    transition: all 0.25s ease;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-/* TEXT */
 .service-button span {
     white-space: nowrap;
 }
 
-/* ARROW */
 .service-button i {
     margin-left: 9px;
     font-size: 11px;
 
-    transition: transform 0.25s ease;
+    color: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
 }
 
-/* HOVER */
-.service-button:hover {
-    background: #0b57a4 !important;
-    color: #ffffff !important;
+/* =========================================================
+   HOVER = KUNING
+   ========================================================= */
 
-    border-color: #0b57a4;
+.service-button:hover {
+    background: #ffc928 !important;
+    color: #062d63 !important;
+
+    border-color: #ffc928;
 
     transform: translateY(-3px);
 
-    box-shadow: 0 7px 16px rgba(11, 87, 164, 0.18);
+    box-shadow: 0 8px 18px rgba(227, 170, 0, 0.25);
+}
+
+.service-button:hover span {
+    color: #062d63 !important;
 }
 
 .service-button:hover i {
+    color: #062d63 !important;
     transform: translateX(4px);
 }
 
-/* ACTIVE */
+/* =========================================================
+   SAAT DIKLIK
+   ========================================================= */
+
 .service-button:active {
     transform: translateY(-1px);
 }
 
-/* FOCUS */
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
 .service-button:focus-visible {
     outline: 3px solid #ffc928;
     outline-offset: 3px;
 }
 
-/* TABLET */
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media (max-width: 800px) {
+
     .service-buttons-wrap {
         max-width: 600px;
     }
@@ -453,9 +478,13 @@ button, input, textarea { font: inherit; }
     .service-button {
         min-width: 200px;
     }
+
 }
 
-/* HP */
+/* =========================================================
+   HP
+   ========================================================= */
+
 @media (max-width: 600px) {
 
     .service-buttons-wrap {
@@ -482,8 +511,9 @@ button, input, textarea { font: inherit; }
     .service-button i {
         margin-left: 6px;
     }
-}
-    
+
+}    
+
   </style>
 </head>
 <body>
