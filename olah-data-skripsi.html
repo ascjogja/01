@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olah Data Skripsi Jogja & Analisis Data | ASC</title>
+
+    <meta name="description"
+          content="Academic Support Center menyediakan pendampingan olah data skripsi di Jogja, konsultasi analisis data, SPSS, interpretasi hasil, review, dan pemahaman analisis penelitian.">
+
+    <meta name="keywords"
+          content="olah data skripsi Jogja, jasa olah data skripsi Jogja, analisis data skripsi Jogja, SPSS skripsi Jogja, konsultasi olah data skripsi">
+
+    <meta name="author" content="Academic Support Center">
+
+    <link rel="canonical"
+          href="https://ascjogja.github.io/01/olah-data-skripsi.html">
+
+    <link rel="icon"
+          type="image/png"
+          href="./ASC-favicon-512.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #123b7a;
+        }
+
+        .brand img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+        }
+
+        .brand-text strong {
+            display: block;
+            font-size: 17px;
+        }
+
+        .brand-text span {
+            display: block;
+            font-size: 12px;
+            color: #777;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #123b7a;
+            font-weight: 600;
+            margin-left: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f2b705;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d47a1, #1565c0);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 13px 24px;
+            border-radius: 8px;
+            background: #f2b705;
+            color: #172033;
+            text-decoration: none;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #ffd54f;
+        }
+
+        section {
+            padding: 65px 0;
+        }
+
+        .section-title {
+            color: #123b7a;
+            font-size: 30px;
+            margin-bottom: 22px;
+        }
+
+        .justify {
+            text-align: justify;
+            margin-bottom: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+        }
+
+        .card h3 {
+            color: #123b7a;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background: #f8fafc;
+        }
+
+        .cta {
+            background: #123b7a;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        footer {
+            background: #0b2d5c;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #f2b705;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero {
+                padding: 55px 0;
+            }
+
+            .hero h1 {
+                font-size: 31px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="./index.html" class="brand">
+
+            <img src="./logoASC.png"
+                 alt="Academic Support Center">
+
+            <div class="brand-text">
+                <strong>Academic Support Center</strong>
+                <span>Selalu Support Akademikmu</span>
+            </div>
+
+        </a>
+
+        <nav>
+            <a href="./index.html">Beranda</a>
+            <a href="./jasa-skripsi-jogja.html">Skripsi</a>
+            <a href="./jasa-tesis-jogja.html">Tesis</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="container">
+
+        <h1>
+            Olah Data Skripsi Jogja & Analisis Data
+        </h1>
+
+        <p>
+            Academic Support Center menyediakan pendampingan olah data
+            skripsi di Jogja untuk membantu mahasiswa memahami proses
+            pengolahan, analisis, interpretasi, dan penyajian hasil penelitian
+            secara lebih terarah.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/62895391683301?text=Halo%20ASC,%20saya%20ingin%20konsultasi%20olah%20data%20skripsi."
+           target="_blank"
+           rel="noopener noreferrer">
+            Konsultasi via WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Pendampingan Olah Data Skripsi di Jogja
+        </h2>
+
+        <p class="justify">
+            Pengolahan data merupakan salah satu bagian penting dalam proses
+            penelitian skripsi. Mahasiswa perlu memahami bagaimana data
+            penelitian disiapkan, diolah, dianalisis, kemudian disajikan
+            sehingga hasil penelitian dapat dipahami dengan baik.
+        </p>
+
+        <p class="justify">
+            Academic Support Center membantu mahasiswa melalui konsultasi
+            dan pendampingan terkait olah data skripsi, analisis data,
+            penggunaan aplikasi pengolahan data, interpretasi hasil,
+            serta review penyajian hasil penelitian sesuai kebutuhan
+            akademik masing-masing.
+        </p>
+
+        <p class="justify">
+            Pendampingan dapat dilakukan secara online maupun offline di
+            Jogja. Bentuk pendampingan disesuaikan dengan kebutuhan dan
+            tahapan penelitian mahasiswa.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="highlight">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Layanan Olah Data Skripsi
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Konsultasi Data Penelitian</h3>
+
+                <p class="justify">
+                    Membahas jenis data, kebutuhan penelitian, dan tahapan
+                    pengolahan data yang sesuai dengan penelitian mahasiswa.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Pengolahan Data</h3>
+
+                <p class="justify">
+                    Pendampingan dalam proses pengolahan data menggunakan
+                    aplikasi yang relevan dengan kebutuhan penelitian.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Analisis Data</h3>
+
+                <p class="justify">
+                    Konsultasi mengenai proses analisis data sesuai metode
+                    penelitian yang digunakan.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>SPSS & Pengolahan Data</h3>
+
+                <p class="justify">
+                    Pendampingan memahami penggunaan SPSS untuk kebutuhan
+                    pengolahan dan analisis data penelitian.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Interpretasi Hasil</h3>
+
+                <p class="justify">
+                    Membantu mahasiswa memahami hasil pengolahan data dan
+                    menghubungkannya dengan tujuan penelitian.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Review & Revisi</h3>
+
+                <p class="justify">
+                    Review hasil pengolahan dan penyajian data agar lebih
+                    terstruktur dan mudah dipahami.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Siapa yang Membutuhkan Pendampingan Olah Data?
+        </h2>
+
+        <p class="justify">
+            Layanan ini dapat digunakan oleh mahasiswa yang sedang menyusun
+            skripsi dan mengalami kesulitan memahami proses pengolahan atau
+            analisis data penelitian.
+        </p>
+
+        <p class="justify">
+            Pendampingan juga dapat membantu mahasiswa yang ingin memahami
+            penggunaan SPSS, membaca output analisis, melakukan review hasil
+            penelitian, atau mempersiapkan pembahasan hasil untuk proses
+            bimbingan dengan dosen.
+        </p>
+
+        <p class="justify">
+            Fokus ASC adalah membantu mahasiswa memahami proses akademiknya.
+            Data penelitian, keputusan metode, interpretasi, dan hasil akhir
+            tetap menjadi bagian dari proses belajar serta tanggung jawab
+            akademik mahasiswa.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>
+            Butuh Pendampingan Olah Data Skripsi di Jogja?
+        </h2>
+
+        <p>
+            Konsultasikan kebutuhan penelitian dan olah data Anda bersama
+            Academic Support Center.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/62895391683301?text=Halo%20ASC,%20saya%20ingin%20konsultasi%20olah%20data%20skripsi%20di%20Jogja."
+           target="_blank"
+           rel="noopener noreferrer">
+            Hubungi ASC via WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Academic Support Center (ASC) —
+        <a href="https://3dit-id.github.io/3dit/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Powered by 3DIT.id
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>
