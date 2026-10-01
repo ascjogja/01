@@ -219,3 +219,21 @@ button, input, textarea { font: inherit; }
   .floating-wa { right: 16px; bottom: 16px; }
   .back-to-top { right: 23px; bottom: 84px; }
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+}
+
+.brand-text {
+    white-space: nowrap;
+}
