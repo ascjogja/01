@@ -220,9 +220,20 @@ button, input, textarea { font: inherit; }
   .back-to-top { right: 23px; bottom: 84px; }
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .brand-logo {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     flex-shrink: 0;
+    display: block;
+}
+
+.brand-text {
+    white-space: nowrap;
 }
