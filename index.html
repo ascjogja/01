@@ -358,42 +358,49 @@ button, input, textarea { font: inherit; }
 
 }
 
-    /* =========================================================
-   BUTTON 6 LAYANAN SEO
+/* =========================================================
+   BUTTON 6 LAYANAN SEO - RAPI & COMPACT
    ========================================================= */
 
 .service-buttons-wrap {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    margin-top: 35px;
-    padding-top: 5px;
+
+    /* Lebar button dibuat lebih kecil */
+    grid-template-columns: repeat(3, 280px);
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px 20px;
+
+    margin: 38px auto 0;
 }
 
+/* BUTTON */
 .service-button {
-    width: 100%;
-    min-height: 58px;
+    width: 280px;
+    min-height: 54px;
 
     display: flex !important;
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px 20px;
+    padding: 13px 17px;
 
     background: #ffffff !important;
     color: #0b57a4 !important;
 
-    border: 2px solid #d9e7f5;
-    border-radius: 14px;
+    border: 1px solid #d6e4f2;
+    border-radius: 10px;
 
     text-decoration: none !important;
 
     font-family: "Open Sans", Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 
-    box-shadow: 0 6px 18px rgba(13, 59, 105, 0.08);
+    box-shadow: 0 4px 12px rgba(13, 59, 105, 0.07);
 
     transition:
         background 0.3s ease,
@@ -403,16 +410,17 @@ button, input, textarea { font: inherit; }
         box-shadow 0.3s ease;
 }
 
+/* TEXT */
 .service-button span {
-    display: block;
     flex: 1;
+    text-align: left;
 }
 
+/* ICON */
 .service-button i {
     flex-shrink: 0;
-    margin-left: 15px;
-
-    font-size: 14px;
+    margin-left: 12px;
+    font-size: 13px;
 
     transition: transform 0.3s ease;
 }
@@ -427,17 +435,17 @@ button, input, textarea { font: inherit; }
 
     border-color: #0b57a4;
 
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 
-    box-shadow: 0 12px 26px rgba(11, 87, 164, 0.22);
+    box-shadow: 0 8px 18px rgba(11, 87, 164, 0.20);
 }
 
 .service-button:hover i {
-    transform: translateX(6px);
+    transform: translateX(5px);
 }
 
 /* =========================================================
-   ACTIVE / SAAT DIKLIK
+   ACTIVE
    ========================================================= */
 
 .service-button:active {
@@ -445,7 +453,7 @@ button, input, textarea { font: inherit; }
 }
 
 /* =========================================================
-   FOCUS KEYBOARD
+   KEYBOARD FOCUS
    ========================================================= */
 
 .service-button:focus-visible {
@@ -457,11 +465,10 @@ button, input, textarea { font: inherit; }
    TABLET
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     .service-buttons-wrap {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
+        grid-template-columns: repeat(2, 280px);
     }
 
 }
@@ -470,17 +477,21 @@ button, input, textarea { font: inherit; }
    HP
    ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 
     .service-buttons-wrap {
         grid-template-columns: 1fr;
-        gap: 14px;
-        margin-top: 28px;
+        gap: 12px;
+        margin-top: 30px;
     }
 
     .service-button {
-        min-height: 55px;
-        padding: 14px 17px;
+        width: min(100%, 320px);
+        margin: 0 auto;
+
+        min-height: 52px;
+        padding: 13px 16px;
+
         font-size: 14px;
     }
 
