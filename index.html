@@ -355,6 +355,100 @@ button, input, textarea { font: inherit; }
     }
 
 }
+
+/* =========================================================
+   BUTTON HALAMAN LAYANAN
+   ========================================================= */
+
+.service-buttons-wrap {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.service-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    min-height: 58px;
+    padding: 15px 20px;
+
+    background: #ffffff;
+    color: #0a3d7c;
+
+    border: 2px solid #dce8f5;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow: 0 5px 15px rgba(11, 58, 111, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.service-button i {
+    flex-shrink: 0;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover */
+.service-button:hover {
+    background: #0b57a4;
+    color: #ffffff;
+    border-color: #0b57a4;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 24px rgba(11, 87, 164, 0.22);
+}
+
+.service-button:hover i {
+    transform: translateX(5px);
+}
+
+/* Saat diklik */
+.service-button:active {
+    transform: translateY(-1px);
+}
+
+/* Focus untuk keyboard */
+.service-button:focus-visible {
+    outline: 3px solid #ffc928;
+    outline-offset: 3px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .service-buttons-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .service-buttons-wrap {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .service-button {
+        min-height: 55px;
+        padding: 14px 17px;
+        font-size: 14px;
+    }
+}
     
   </style>
 </head>
