@@ -358,48 +358,53 @@ button, input, textarea { font: inherit; }
 
 }
 
+
 /* =========================================================
-   6 BUTTON LAYANAN - BLUE TO YELLOW HOVER
+   BUTTON LAYANAN SEO - SEJAJAR DENGAN GRID KARTU
    ========================================================= */
 
 .service-buttons-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
-    gap: 14px 16px;
+    gap: 22px;
 
-    max-width: 850px;
-    margin: 35px auto 0;
+    width: 100%;
+    max-width: none;
+    margin: 30px auto 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.service-button {
-    display: inline-flex !important;
+/* BUTTON NORMAL: BIRU */
+.service-buttons-wrap .service-button {
+    display: flex !important;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    width: auto !important;
-    min-width: 210px;
-    max-width: 245px;
-    height: 48px;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 48px;
+    height: auto;
 
-    padding: 0 16px;
+    padding: 12px 18px;
+    box-sizing: border-box;
 
-    /* KONDISI NORMAL = BIRU */
     background: #0b57a4 !important;
     color: #ffffff !important;
 
     border: 1px solid #0b57a4;
-    border-radius: 9px;
-
-    text-decoration: none !important;
+    border-radius: 10px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
+    line-height: 1.4;
 
-    box-shadow: 0 4px 12px rgba(11, 87, 164, 0.15);
+    text-decoration: none !important;
+
+    box-shadow: 0 4px 12px rgba(11, 87, 164, 0.12);
 
     transition:
         background 0.25s ease,
@@ -409,26 +414,26 @@ button, input, textarea { font: inherit; }
         box-shadow 0.25s ease;
 }
 
-.service-button span {
-    white-space: nowrap;
+/* TEKS */
+.service-buttons-wrap .service-button span {
+    flex: 1;
+    white-space: normal;
+    text-align: left;
+    color: inherit !important;
 }
 
-.service-button i {
-    margin-left: 9px;
-    font-size: 11px;
+/* PANAH */
+.service-buttons-wrap .service-button i {
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 12px;
+    color: inherit !important;
 
-    color: #ffffff;
-
-    transition:
-        transform 0.25s ease,
-        color 0.25s ease;
+    transition: transform 0.25s ease;
 }
 
-/* =========================================================
-   HOVER = KUNING
-   ========================================================= */
-
-.service-button:hover {
+/* HOVER: KUNING */
+.service-buttons-wrap .service-button:hover {
     background: #ffc928 !important;
     color: #062d63 !important;
 
@@ -436,83 +441,51 @@ button, input, textarea { font: inherit; }
 
     transform: translateY(-3px);
 
-    box-shadow: 0 8px 18px rgba(227, 170, 0, 0.25);
+    box-shadow: 0 8px 18px rgba(227, 170, 0, 0.22);
 }
 
-.service-button:hover span {
+.service-buttons-wrap .service-button:hover span,
+.service-buttons-wrap .service-button:hover i {
     color: #062d63 !important;
 }
 
-.service-button:hover i {
-    color: #062d63 !important;
+.service-buttons-wrap .service-button:hover i {
     transform: translateX(4px);
 }
 
-/* =========================================================
-   SAAT DIKLIK
-   ========================================================= */
-
-.service-button:active {
+/* KLIK */
+.service-buttons-wrap .service-button:active {
     transform: translateY(-1px);
 }
 
-/* =========================================================
-   FOCUS
-   ========================================================= */
-
-.service-button:focus-visible {
+/* FOCUS KEYBOARD */
+.service-buttons-wrap .service-button:focus-visible {
     outline: 3px solid #ffc928;
     outline-offset: 3px;
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
-
-@media (max-width: 800px) {
-
+/* TABLET */
+@media (max-width: 900px) {
     .service-buttons-wrap {
-        max-width: 600px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
     }
-
-    .service-button {
-        min-width: 200px;
-    }
-
 }
 
-/* =========================================================
-   HP
-   ========================================================= */
-
+/* HP */
 @media (max-width: 600px) {
-
     .service-buttons-wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        max-width: 100%;
-        gap: 10px;
-
-        margin-top: 28px;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 25px;
     }
 
-    .service-button {
-        width: 100% !important;
-        min-width: 0;
-        max-width: none;
-
-        height: 46px;
-        padding: 0 10px;
-
-        font-size: 12px;
+    .service-buttons-wrap .service-button {
+        min-height: 46px;
+        padding: 12px 15px;
+        font-size: 13px;
     }
-
-    .service-button i {
-        margin-left: 6px;
-    }
-
-}    
+}
 
   </style>
 </head>
