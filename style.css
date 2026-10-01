@@ -259,3 +259,11 @@ button, input, textarea { font: inherit; }
 .brand-text {
     white-space: nowrap;
 }
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
