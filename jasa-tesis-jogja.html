@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jasa Tesis Jogja & Pendampingan Tesis | ASC</title>
+
+  <meta name="description"
+        content="Academic Support Center menyediakan pendampingan tesis di Jogja untuk membantu mahasiswa memahami penelitian, metodologi, penulisan, olah data, review, dan revisi secara lebih terarah.">
+
+  <meta name="keywords"
+        content="jasa tesis Jogja, pendampingan tesis Jogja, bimbingan tesis Jogja, konsultasi tesis Jogja, olah data tesis Jogja">
+
+  <meta name="author" content="Academic Support Center">
+
+  <link rel="canonical"
+        href="https://ascjogja.github.io/01/jasa-tesis-jogja.html">
+
+  <link rel="icon"
+        href="./ASC-favicon-512.png"
+        type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    :root {
+      --blue-dark: #062d63;
+      --blue: #0b57a4;
+      --blue-light: #eaf4ff;
+      --yellow: #ffc928;
+      --yellow-dark: #e3aa00;
+      --white: #ffffff;
+      --text: #203044;
+      --muted: #667085;
+      --border: #dfe7f1;
+      --surface: #f7faff;
+      --shadow: 0 14px 35px rgba(11, 58, 111, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.75;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 36px));
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--blue-dark);
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+
+    .brand-text small {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: .75rem;
+    }
+
+    .nav-link {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: .92rem;
+    }
+
+    .nav-link:hover {
+      color: var(--yellow-dark);
+    }
+
+    /* HERO */
+
+    .hero {
+      background:
+        linear-gradient(135deg, var(--blue-dark), var(--blue));
+      color: var(--white);
+      padding: 80px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 780px;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.92);
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      background: var(--yellow);
+      color: var(--blue-dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #ffd84d;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,.6);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--blue-dark);
+    }
+
+    /* CONTENT */
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-alt {
+      background: var(--surface);
+    }
+
+    .section-title {
+      color: var(--blue-dark);
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      line-height: 1.3;
+      margin: 0 0 20px;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      color: var(--blue);
+      font-size: .82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 10px;
+    }
+
+    .justify {
+      text-align: justify;
+    }
+
+    .content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .content p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      transition: .25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--blue-dark);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--blue-light);
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: var(--blue-dark);
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: var(--blue-dark);
+      color: var(--white);
+      padding: 35px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-inner p {
+      margin: 0;
+      color: rgba(255,255,255,.8);
+      font-size: .9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      font-size: .9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    @media (max-width: 700px) {
+
+      .nav-inner {
+        min-height: 64px;
+      }
+
+      .brand img {
+        width: 38px;
+        height: 38px;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+    <div class="container nav-inner">
+
+      <a href="./index.html" class="brand">
+
+        <img
+          src="./logoASC.png"
+          alt="Academic Support Center">
+
+        <span class="brand-text">
+          Academic Support Center
+          <small>Selalu Support Akademikmu</small>
+        </span>
+
+      </a>
+
+      <a href="./index.html" class="nav-link">
+        ← Kembali ke Beranda
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Academic Support Center • Jogja
+          </span>
+
+          <h1>
+            Jasa Tesis Jogja &amp; Pendampingan Tesis
+          </h1>
+
+          <p>
+            Academic Support Center menyediakan pendampingan tesis bagi
+            mahasiswa yang membutuhkan konsultasi dan dukungan dalam proses
+            penelitian, metodologi, penulisan, olah data, review, dan revisi
+            secara lebih terarah.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              href="https://wa.me/62895391683301?text=Halo%20ASC,%20saya%20ingin%20konsultasi%20tentang%20pendampingan%20tesis."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary">
+
+              Konsultasi via WhatsApp
+
+            </a>
+
+            <a
+              href="./index.html"
+              class="btn btn-outline">
+
+              Lihat Semua Layanan
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PENJELASAN -->
+
+    <section class="section">
+
+      <div class="container content">
+
+        <span class="section-kicker">
+          Pendampingan Tesis
+        </span>
+
+        <h2 class="section-title">
+          Pendampingan Tesis untuk Mahasiswa di Jogja
+        </h2>
+
+        <p class="justify">
+          Tesis membutuhkan proses penelitian dan penulisan yang terstruktur,
+          mulai dari penentuan topik, penyusunan proposal, pemilihan metode,
+          pengumpulan data, pengolahan data, pembahasan hasil penelitian,
+          hingga tahap revisi.
+        </p>
+
+        <p class="justify">
+          Academic Support Center membantu mahasiswa memahami tahapan
+          penelitian dan penulisan tesis melalui konsultasi dan pendampingan
+          yang disesuaikan dengan kebutuhan akademik masing-masing.
+        </p>
+
+        <p class="justify">
+          Pendampingan dapat mencakup pembahasan topik, metodologi penelitian,
+          struktur penulisan, pengolahan data, interpretasi hasil, review
+          naskah, dan pembahasan catatan revisi dari dosen pembimbing.
+        </p>
+
+        <p class="justify">
+          Fokus ASC adalah membantu mahasiswa memahami proses akademiknya
+          dengan lebih baik. Materi penelitian, analisis, dan keputusan
+          akademik tetap menjadi bagian dari proses belajar dan tanggung jawab
+          mahasiswa.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- LAYANAN -->
+
+    <section class="section section-alt">
+
+      <div class="container">
+
+        <div class="content">
+
+          <span class="section-kicker">
+            Layanan
+          </span>
+
+          <h2 class="section-title">
+            Layanan Pendampingan Tesis ASC
+          </h2>
+
+          <p class="justify">
+            Setiap penelitian memiliki karakteristik dan kebutuhan yang
+            berbeda. Karena itu, pendampingan tesis disesuaikan dengan tahap
+            penelitian dan kebutuhan akademik mahasiswa.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <article class="card">
+
+            <h3>
+              Konsultasi Topik Tesis
+            </h3>
+
+            <p class="justify">
+              Diskusi mengenai ide penelitian, fokus penelitian, ruang
+              lingkup, serta arah pengembangan topik tesis agar lebih
+              terstruktur.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <h3>
+              Pendampingan Proposal Tesis
+            </h3>
+
+            <p class="justify">
+              Pendampingan dalam memahami struktur proposal, latar belakang,
+              rumusan masalah, tujuan penelitian, kajian pustaka, dan
+              komponen proposal lainnya.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <h3>
+              Konsultasi Metodologi Penelitian
+            </h3>
+
+            <p class="justify">
+              Membantu memahami pilihan metode penelitian, variabel,
+              instrumen, teknik pengumpulan data, dan alur penelitian sesuai
+              kebutuhan akademik.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <h3>
+              Olah Data Tesis
+            </h3>
+
+            <p class="justify">
+              Pendampingan dalam pengolahan data, penyusunan tabel atau
+              visualisasi, membaca hasil analisis, serta memahami interpretasi
+              data penelitian.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <h3>
+              Review &amp; Revisi Tesis
+            </h3>
+
+            <p class="justify">
+              Review struktur tulisan, sistematika, bahasa, pembahasan, dan
+              penyesuaian naskah berdasarkan catatan atau arahan dari dosen
+              pembimbing.
+            </p>
+
+          </article>
+
+
+          <article class="card">
+
+            <h3>
+              Konsultasi Persiapan Bimbingan
+            </h3>
+
+            <p class="justify">
+              Membantu mahasiswa mempersiapkan bahan dan pertanyaan yang akan
+              dibahas dalam proses konsultasi dengan dosen pembimbing.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- UNTUK MAHASISWA -->
+
+    <section class="section">
+
+      <div class="container content">
+
+        <span class="section-kicker">
+          Untuk Mahasiswa
+        </span>
+
+        <h2 class="section-title">
+          Siapa yang Membutuhkan Pendampingan Tesis?
+        </h2>
+
+        <p class="justify">
+          Layanan pendampingan tesis ASC dapat digunakan oleh mahasiswa yang
+          sedang berada pada tahap awal penelitian maupun mahasiswa yang
+          sedang menyelesaikan analisis, penulisan, review, atau revisi tesis.
+        </p>
+
+        <p class="justify">
+          Konsultasi dapat disesuaikan dengan kondisi mahasiswa, misalnya
+          ketika masih menentukan arah penelitian, menyusun proposal,
+          mengalami kendala dalam metodologi, membutuhkan bantuan memahami
+          hasil pengolahan data, atau ingin membahas catatan revisi dari dosen
+          pembimbing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          Butuh Pendampingan Tesis di Jogja?
+        </h2>
+
+        <p>
+          Sampaikan jurusan, topik penelitian, tahap pengerjaan, dan
+          kebutuhan Anda. Tim Academic Support Center akan membantu
+          menjelaskan pilihan pendampingan yang sesuai.
+        </p>
+
+        <a
+          href="https://wa.me/62895391683301?text=Halo%20Academic%20Support%20Center,%20saya%20ingin%20konsultasi%20pendampingan%20tesis."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary">
+
+          Konsultasi WhatsApp
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <p>
+        © <span id="year"></span>
+        Academic Support Center (ASC)
+      </p>
+
+      <div class="footer-links">
+
+        <a href="./index.html">
+          Beranda
+        </a>
+
+        <a
+          href="https://www.instagram.com/academicsupport.center/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Instagram
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61594514326640"
+          target="_blank"
+          rel="noopener noreferrer">
+          Facebook
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
