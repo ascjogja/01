@@ -237,3 +237,25 @@ button, input, textarea { font: inherit; }
 .brand-text {
     white-space: nowrap;
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-logo {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    object-fit: contain !important;
+    display: block !important;
+    flex: 0 0 40px !important;
+}
+
+.brand-text {
+    white-space: nowrap;
+}
